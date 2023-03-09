@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', cursive;
+}
+
+body {
+    /* display: flex; */
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(255, 255, 232);
+
+}
+
+.back img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    display: flex;
+    float: left;
+}
+
+/* Standard Layout  ↑  */
+
+.main-container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    margin: auto;
+    padding: 25px;
+    width: 500px;
+    border-radius: 15px;
+    background: #ffffff69;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.233);}
+
+.text,
+.key-code,
+.key-name {
+    font-size: 45px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.text {
+    font-size: 30px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.content,
+.key-code,
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: none;
+    flex-direction: column;
+}
+
+.box.active .content {
+    display: flex;
+}
+
+.content .key-code {
+    height: 110px;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    pointer-events: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.911);
+}
+
+
+.content .details {
+    width: 100%;
+    margin-top: 15px;
+    justify-content: space-evenly;
+}
+
+.details p {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.details p:last-child {
+    border-left: 1px solid #000000;
+}

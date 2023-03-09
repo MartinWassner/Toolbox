@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 232);
+    font-family: 'Tilt Neon', cursive;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    height: 100vh;
+}
+
+.back img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    display: flex;
+    float: left;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+
+textarea,
+button {
+    border: 0;
+    border-radius: 0;
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: inherit;
+    outline: none;
+    appearance: none;
+    text-align: left;
+    border: 2px solid black;
+    width: 100px;
+    margin: 2px;
+}
+
+button:hover,
+textarea:hover,
+textarea:active,
+textarea:focus,
+button:active,
+button:focus {
+    outline: none;
+}
+
+.calculator {
+    border-radius: 12px;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.178);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40em;
+    overflow: hidden;
+
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0em;
+    position: relative;
+    text-align: center;
+
+}
+
+.keys>* {
+    background-color: #fff;
+    padding: 0.5em 1.25em;
+    position: relative;
+    text-align: center;
+    background-color: rgb(255, 255, 232);
+
+}
+
+.keys>*:active::before,
+.keys>.is-depressed::before {
+    background-color: rgba(194, 18, 18, 0.2);
+    bottom: 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+    content: "";
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.key--operator {
+    background-color: #eee;
+}
+
+.equal {
+    background-color: antiquewhite;
+    grid-column: -2;
+    grid-row: 2 / span 4;
+}
