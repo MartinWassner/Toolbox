@@ -25,7 +25,8 @@ keys.addEventListener('click', e => {
     }
 
     if (target.classList.contains('decimal')) {
-        console.log('decimal', target.value);
+        inputDecimal(target.value);
+        updateDisplay();
         return;
     }
 
@@ -42,5 +43,11 @@ function inputDigit(digit) {
     const { displayValue } = calculator;
 
     calculator.displayValue = displayValue === '0' ? digit : displayValue + digit;
+}
+
+function inputDecimal(dot){
+    if (!calculator.displayValue.includes(dot)) {
+        calculator.displayValue += dot;
+    }
 }
 
