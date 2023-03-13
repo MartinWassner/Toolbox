@@ -1,0 +1,46 @@
+shared components:
+
+
+HTML: 
+
+    Fonts:
+
+     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+
+    Back Arrow:
+
+
+     <a href="/index.html">
+        <div class="back">
+            <img src="https://cdn-icons-png.flaticon.com/512/109/109618.png" alt="">
+        </div>
+    </a>
+
+
+CSS: 
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 232);
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+  height: 100vh;
+}
+
+.back img {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  display: flex;
+  float: left;
+}
