@@ -30,6 +30,12 @@ function handleOperator(nextOperator){
     const { firstOperand, displayValue, operator} = calculator
     
     const inputValue = parseFloat(displayValue);
+
+    if (operator && calculator.waitingForSecondOperand) {
+        calculator.operator = nextOperator;
+        console.log(calculator);
+        return
+    }
     
     if (firstOperand === null && !isNaN(inputValue)){
         calculator.firstOperand = inputValue;
@@ -87,10 +93,19 @@ keys.addEventListener('click', e => {
     }
 
     if (target.classList.contains('allClear')) {
-        console.log('clear', target.value);
+        resetCalculator();
+        updateDisplay();
         return;
     }
 
     inputDigit(target.value);
     updateDisplay();
 });
+
+function resetCalculator() {
+    calculator.displayValue = '0';
+    calculator.firstOperand = null;
+    calculator.waitingForSecondOperand = false;
+    calculator.operator = null;
+    console.log(calculator);
+}
