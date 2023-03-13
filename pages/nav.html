@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Navbar</title>
+
+    <link rel="stylesheet" href="/styles/nav.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="/index.html">
+        <div class="back">
+            <img src="https://cdn-icons-png.flaticon.com/512/109/109618.png" alt="">
+        </div>
+    </a>
+
+    <div class="container">
+        
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <span class="toggleMenu"></span>
+            </ul>
+
+    </div>
+
+    <!-- This was such a short script that I decided to write it directly on the tag and not on a separate .js -->
+
+    <script>
+        let toggleMenu = document.querySelector('.toggleMenu');
+        let navigation = document.querySelector('.navigation');
+        toggleMenu.onclick = function(){
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

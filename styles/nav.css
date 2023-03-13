@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tilt Neon', cursive;
+}
+
+body {
+  background-color: rgb(255, 255, 232);
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+  height: 100vh;
+}
+
+.back img {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  display: flex;
+  float: left;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {    
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #FFFFE8;
+    border-radius: 50%;
+    border-radius: 50px;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgb(172, 160, 153);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navigation .toggleMenu {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: rgb(255, 223, 118);
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+    transition-delay: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation.active{
+    width: 700px;
+}
+
+.navigation.active .toggleMenu{
+    background: rgb(255, 223, 118);
+    transition-delay: 0.2s;
+    transform: translateY(60px);
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.07);
+}
+
+.navigation .toggleMenu::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background: #333;
+    transform: translateY(-5px);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.navigation .toggleMenu::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background: #333;
+    transform: translateY(5px);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.navigation.active .toggleMenu::before{
+    background: #000000;
+    transform: translateY(0px) rotate(45deg) scale(0.6);
+    transition-delay: 0s;
+}
+
+.navigation.active .toggleMenu::after{
+    background: #000000;
+    transform: translateY(0px) rotate(-45deg) scale(0.6);
+    transition-delay: 0s;
+}
+
+.navigation li{
+   list-style: none;
+   transition: 0.5s;
+   transform: scale(0); 
+}
+
+.navigation.active li {
+    transition-delay: 0.75s;
+    display: flex;
+    transform: scale(1);
+}
+
+.navigation li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.navigation li a:hover{
+    background: rgb(255, 223, 118);
+    color: rgb(134, 134, 134);
+}
