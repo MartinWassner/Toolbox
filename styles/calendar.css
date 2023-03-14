@@ -35,9 +35,9 @@ body {
     gap: 20px;
     height: 120px;
     padding: 20px 40px;
-    background: #fffbf6;
+    background: #d0f4ff;
     border-radius: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .week li{
@@ -47,7 +47,44 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #666;
+    color: #444444;
     border-radius: 20px;
     font-size: 1.20em;
+}
+
+.week li.current{
+  position: relative;
+  background: rgb(125, 190, 247);
+  height: 100px;
+  width: 100px;
+  font-size: 1.65em;
+  color: #222;
+  border: 3px solid rgb(255, 255, 232);
+  cursor: pointer;
+  transform: translateY(-70px);
+  font-weight: 600;
+}
+
+.week li.current::before{
+  content: '';
+  position: absolute;
+  top: 47px;
+  left: -33px;
+  width: 30px;
+  height: 30px;
+  background: #d0f4ff;
+  border-top-right-radius: 10px;
+  box-shadow: 3px -3px rgb(255, 255, 232);
+}
+
+.week li.current::after{
+  content: '';
+  position: absolute;
+  top: 47px;
+  right: -33px;
+  width: 30px;
+  height: 30px;
+  background: #d0f4ff;
+  border-top-left-radius: 10px;
+  box-shadow: -3px -3px rgb(255, 255, 232);
 }
