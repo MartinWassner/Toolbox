@@ -23,36 +23,36 @@ body {
   float: left;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.week{
-    display: flex;
-    gap: 20px;
-    height: 120px;
-    padding: 20px 40px;
-    background: #d0f4ff;
-    border-radius: 10px;
-    /* border: 1px solid black; */
+.week {
+  display: flex;
+  gap: 20px;
+  height: 120px;
+  padding: 20px 40px;
+  background: #d0f4ff;
+  border-radius: 10px;
+  /* border: 1px solid black; */
 }
 
-.week li{
-    list-style: none;
-    height: 80px;
-    width: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #444444;
-    border-radius: 20px;
-    font-size: 1.20em;
+.week li {
+  list-style: none;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #444444;
+  border-radius: 20px;
+  font-size: 1.20em;
 }
 
-.week li.current{
+.week li.current {
   position: relative;
   background: rgb(125, 190, 247);
   height: 100px;
@@ -65,7 +65,7 @@ body {
   font-weight: 600;
 }
 
-.week li.current::before{
+.week li.current::before {
   content: '';
   position: absolute;
   top: 47px;
@@ -77,7 +77,7 @@ body {
   box-shadow: 3px -3px rgb(255, 255, 232);
 }
 
-.week li.current::after{
+.week li.current::after {
   content: '';
   position: absolute;
   top: 47px;
@@ -89,23 +89,23 @@ body {
   box-shadow: -3px -3px rgb(255, 255, 232);
 }
 
-.week li.current h1{
+.week li.current h1 {
   position: absolute;
   transform: translateY(73px);
   font-size: 1.6em;
   color: #222;
 }
 
-.week li.current h2{
+.week li.current h2 {
   position: absolute;
   transform: translateY(104px);
   font-size: 0.8em;
-  color: #222;  
+  color: #222;
 }
 
-.week li.current h3{
+.week li.current h3 {
   position: absolute;
   transform: translateY(-65px);
   font-size: 1em;
-  color: #222;  
+  color: #222;
 }
