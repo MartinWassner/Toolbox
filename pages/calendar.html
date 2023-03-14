@@ -29,10 +29,23 @@
         </ul>
     </div>
     <script>
+        let months = ['January','February','March','April','May','June','July','August','September','October','November','December',]
+
         let date = new Date();
         let dayNum = date.getDay();
+        let day = date.getDate();
+        let month = months[date.getMonth()];
+
         let active = document.querySelector('.week li:nth-child('+dayNum+')');
         active.classList.add('current');
+
+        let h1 = document.createElement('h1');
+        h1.innerHTML = day;
+        active.appendChild(h1);
+
+        let h2 = document.createElement('h2');
+        h2.innerHTML = month;
+        active.appendChild(h2);
     </script>
 </body>
 </html>

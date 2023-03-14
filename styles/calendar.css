@@ -88,3 +88,20 @@ body {
   border-top-left-radius: 10px;
   box-shadow: -3px -3px rgb(255, 255, 232);
 }
+
+.week li.current h1{
+  position: absolute;
+  transform: translateY(76px);
+  font-size: 1.6em;
+  color: #222;
+
+}
+
+
+.week li.current h2{
+  position: absolute;
+  transform: translateY(104px);
+  font-size: 0.8em;
+  color: #222;
+  
+}
