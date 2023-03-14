@@ -35,6 +35,7 @@
         let dayNum = date.getDay();
         let day = date.getDate();
         let month = months[date.getMonth()];
+        let year = date.getFullYear();
 
         let active = document.querySelector('.week li:nth-child('+dayNum+')');
         active.classList.add('current');
@@ -46,6 +47,10 @@
         let h2 = document.createElement('h2');
         h2.innerHTML = month;
         active.appendChild(h2);
+
+        let h3 = document.createElement('h3');
+        h3.innerHTML = year;
+        active.appendChild(h3);
     </script>
 </body>
 </html>

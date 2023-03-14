@@ -91,17 +91,21 @@ body {
 
 .week li.current h1{
   position: absolute;
-  transform: translateY(76px);
+  transform: translateY(73px);
   font-size: 1.6em;
   color: #222;
-
 }
-
 
 .week li.current h2{
   position: absolute;
   transform: translateY(104px);
   font-size: 0.8em;
-  color: #222;
-  
+  color: #222;  
+}
+
+.week li.current h3{
+  position: absolute;
+  transform: translateY(-65px);
+  font-size: 1em;
+  color: #222;  
 }
