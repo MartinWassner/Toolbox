@@ -14,29 +14,27 @@ button.addEventListener("click", () => {
     let egg = document.querySelector('.egg')
 
     egg.addEventListener("click", () => {
-        // egg.innerHTML = 'YOU WILL REGRET THIS';
-
         let bsod = document.querySelector('.bsod');
 
-        
+
         function openFullscreen() {
             if (bsod.requestFullscreen) {
                 bsod.requestFullscreen();
             } else if (bsod.webkitRequestFullscreen) { /* Safari */
-            bsod.webkitRequestFullscreen();
+                bsod.webkitRequestFullscreen();
+            }
         }
-    }        
-    openFullscreen()
-    
-    bsod.classList.replace('bsod', 'bsodAct')
+        openFullscreen()
 
-    button.classList.remove('glitch', 'egg')
+        bsod.classList.replace('bsod', 'bsodAct')
 
-    setTimeout(()=> alert('jk lol'), 4000)
+        button.classList.remove('glitch', 'egg')
 
-    let back = document.querySelector('.back');
+        setTimeout(() => alert('jk lol'), 4000)
 
-    back.classList.remove('backUnav')
+        let back = document.querySelector('.back');
+
+        back.classList.remove('backUnav')
 
     })
 
