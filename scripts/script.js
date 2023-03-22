@@ -2,13 +2,13 @@ let button = document.querySelector('.text')
 
 button.addEventListener("click", () => {
     button.classList.add('glitch')
-    button.innerHTML = "StoP.. DON't do IT don'T Do IT doNT'DOI t;";
+    button.innerHTML = "Please don't, it's not finished. I'm being serious";
 
     let glitch = document.querySelector('.glitch')
 
     glitch.addEventListener("click", () => {
         glitch.classList.add('egg')
-        glitch.innerHTML = 'You WILL REGRET ThiS';
+        glitch.innerHTML = "Ugh... I told you...";
     })
 
     let egg = document.querySelector('.egg')
