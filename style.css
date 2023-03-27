@@ -82,7 +82,6 @@ body {
   align-items: center;
   justify-content: center;
   border: none;
-  
 }
 
 .lat-buttonR {
@@ -102,20 +101,18 @@ body {
   align-items: center;
   text-decoration: none;
   border-radius: 20px;
-  
-}
-.button:hover,
-.buttonR:hover{
-  /* filter: drop-shadow( 5px 0px 1px #000000 ); */
-  box-shadow: 0px 0px 10px #ffddbd;
 
+}
+
+.button:hover,
+.buttonR:hover {
+  box-shadow: 0px 0px 10px #99999939;
 }
 
 .button p {
   opacity: 0;
   font-size: 25px;
   position: absolute;
-
   pointer-events: none;
   color: rgb(0, 0, 0);
   font-family: 'Tilt Neon', cursive;
@@ -131,28 +128,23 @@ body {
   pointer-events: none;
   color: rgb(0, 0, 0);
   font-family: 'Tilt Neon', cursive;
-
 }
 
 .lat-button:hover,
 .lat-buttonR:hover {
   width: 220px;
-
 }
 
 .lat-button:hover span,
 .lat-buttonR:hover span {
   opacity: 0;
   transition: .2s;
-
-
 }
 
 .button:hover p,
 .buttonR:hover p {
   opacity: 100;
   transition: 1s;
-
 }
 
 .left-menu {
@@ -160,9 +152,11 @@ body {
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
+  padding: 10px 0px;
 }
 
 .right-menu {
+  padding: 10px 0px;
   display: inline-flex;
   flex-direction: column;
   height: 100vh;
@@ -171,7 +165,7 @@ body {
   transform: scale(-1, 1);
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined {
   width: 50px;
   height: 50px;
 }
