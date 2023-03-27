@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Currency converter | Toolbox</title>
+
+    <link rel="stylesheet" href="/styles/currency.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="/index.html">
+        <div class="back">
+            <img src="https://cdn-icons-png.flaticon.com/512/109/109618.png" alt="">
+        </div>
+    </a>
+    <div class="container">
+        <div class="wrapper">
+            <h2>Currency Converter</h2>
+            <form action="#">
+                <div class="amount">
+                    <p>Enter Amount</p>
+                    <input type="text" value="1">
+                </div>
+                <div class="drop-list">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="select-box">
+                            <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                            <select> <!-- Options tag are inserted from JavaScript --> </select>
+                        </div>
+                    </div>
+                    <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                    <div class="to">
+                        <p>To</p>
+                        <div class="select-box">
+                            <img src="https://flagcdn.com/48x36/ar.png" alt="flag">
+                            <select> <!-- Options tag are inserted from JavaScript --> </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="exchange-rate">Getting exchange rate...</div>
+                <button>Get Exchange Rate</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="/scripts/currency.js"></script>
+</body>
+
+</html>
