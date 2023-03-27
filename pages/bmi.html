@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BMI Calculator | Toolbox</title>
+
+    <link rel="stylesheet" href="/styles/bmi.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <a href="/index.html">
+        <div class="back">
+            <img src="https://cdn-icons-png.flaticon.com/512/109/109618.png" alt="">
+        </div>
+    </a>
+<div class="wrapper">
+    <div class="container">
+        <h2 style="text-align: center;">BMI Calculator</h2>
+        <form>
+            <p class="inputs">
+                <label>Height (Cm):</label>
+                <input type="number" id="height" min="1">
+            </p>
+
+            <p class="inputs">
+                <label>Weight (Kg):</label>
+                <input type="number" id="weight" min="1">
+            </p>
+
+            <button class="calcBtn">Calculate</button>
+
+            <div style="margin-top: 20px;">Your BMI is: <p id="results"></p></div>
+
+            <p id="message"></p>
+        </form>
+    </div>
+</div>
+
+<script src="/scripts/bmi.js"></script>
+</body>
+</html>
