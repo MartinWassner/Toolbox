@@ -25,6 +25,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    min-width: 100vw;
 }
 .wrapper {    
     width: 420px;

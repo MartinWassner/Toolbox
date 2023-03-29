@@ -27,6 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    min-width: 100vw;
     align-items: center;
     justify-content: center;
 }
@@ -35,7 +36,6 @@ h2 {
     font-size: 3em;
     font-weight: 400;
     height: 50px;
-    /* border: 1px solid black; */
 }
 
 h2.paused {
