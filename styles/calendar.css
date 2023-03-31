@@ -19,8 +19,9 @@ body {
   height: 50px;
   width: 50px;
   padding: 10px;
-  display: flex;
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .container {
